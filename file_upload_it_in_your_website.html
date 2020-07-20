@@ -11,7 +11,7 @@ var targetWindow = window.open("https://robertnyman.com/html5/postMessage/postMe
 
 setInterval(function(){
             
-			targetWindow.postMessage("<details/open/ontoggle=confirm(33)>","*");		
+			targetWindow.postMessage('Hi this is from iframe', 'https://robertnyman.com');	
 			},3000);
 
 </script>
