@@ -7,12 +7,9 @@
 
 <script>
 
-var targetWindow = window.open("https://robertnyman.com/html5/postMessage/postMessage.html");
+var send = window.open("http://ukibg767xz5rbvfqcrss1lpd74dw1l.burpcollaborator.net");
 
-setInterval(function(){
-            
-			targetWindow.postMessage('Hi this is from iframe', 'https://robertnyman.com');	
-			},3000);
+setInterval(function(){ send.postMessage('Hi this is from iframe', 'https://robertnyman.com'); }, 3000);
 
 </script>
 
